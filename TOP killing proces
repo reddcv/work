@@ -1,0 +1,78 @@
+vantacr@c001827170:~$ cd work/
+vantacr@c001827170:~/work$ cd PersonnelDetectionGen0/
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./bin/PersonnelDetectionGen0 
+Initializign detector...
+Interface set up
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+^CStopping...
+Thread not joinable
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ top
+
+top - 12:55:11 up 2 days, 19:43,  1 user,  load average: 1.23, 1.06, 1.01
+Tasks: 239 total,   1 running, 238 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.2 sy,  0.0 ni, 99.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 16273616 total, 10931388 free,  1455256 used,  3886972 buff/cache
+KiB Swap: 16625660 total, 16625660 free,        0 used. 13534380 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     
+ 2569 vantacr   20   0  657704  25336  15756 S   3.0  0.2   0:02.15 unity-scop+ 
+ 1500 vantacr   20   0 1665540 277060  72948 S   0.7  1.7  20:48.70 compiz      
+ 7363 vantacr   20   0   48968   3800   3096 R   0.7  0.0   0:00.05 top         
+  422 root     -51   0       0      0      0 S   0.3  0.0   0:39.48 irq/140-iw+ 
+  993 root      20   0  737948 182532 154248 S   0.3  1.1  12:33.03 Xorg        
+ 1329 vantacr   20   0  354168   8752   5308 S   0.3  0.1   0:29.68 ibus-daemon 
+ 2446 vantacr   20   0 2767908 369324 154924 S   0.3  2.3  14:06.29 firefox     
+ 3332 vantacr   20   0 2250228 176792 118028 S   0.3  1.1   1:08.95 Web Content 
+13171 vantacr   20   0  682700  50320  28584 S   0.3  0.3   1:05.49 gnome-term+ 
+    1 root      20   0  185240   5812   3948 S   0.0  0.0   0:03.91 systemd     
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.03 kthreadd    
+    4 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ 
+    6 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 mm_percpu_+ 
+    7 root      20   0       0      0      0 S   0.0  0.0   0:00.13 ksoftirqd/0 
+    8 root      20   0       0      0      0 S   0.0  0.0   0:21.77 rcu_sched   
+    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      
+   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.05 migration/0 
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./bin/PersonnelDetectionGen0 
+Initializign detector...
+Interface set up
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+^CStopping...
+Thread not joinable
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ 
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ls
+admin      build             catmod.h        CMakeLists.txt  data           etc                 images.list      install.sh      notes.txt   resources  start-utils.sh
+attach.sh  build-debug.sh    clean-build.sh  *compilation*   deploy.sh      images_inside.list  images_raw.list  lib             package.sh  run.sh     test
+bin        build-release.sh  clean.sh        config          detector.yaml  images_jpeg.list    init.sh          libprotobuf.so  README.md   src        util
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   test/CMakeLists.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	lib/Configuration/.ConfigurationManager.cpp.swp
+	lib/Configuration/.ConfigurationManager.cppvi.swp
+	lib/Event/.EventDispatcher.cpp.swp
+	lib/Event/.EventDispatcher.hpp.swp
+	lib/Receive/.ImageReceiverFactory.cpp.swp
+	lib/Tracking/.Tracker.cpp.swp
+	src/.main.cpp.swo
+	src/.main.cpp.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ^C
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ 
+

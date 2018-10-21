@@ -1,0 +1,11 @@
+vantacr@c001827170:~$ grep -r "OPENGL" *
+Documents/Docs/PersonnelDetectionGen0-master/admin/RequiredLibraries.sh:cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D ENABLE_FAST_MATH=ON -D WITH_OPENGL=ON ..
+Terminal Gen0 commands:  702  cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D ENABLE_FAST_MATH=ON -D WITH_OPENGL=ON ..
+^C
+vantacr@c001827170:~$ gedit Documents/Docs/PersonnelDetectionGen0-master/admin/RequiredLibraries.sh &
+[1] 23719
+vantacr@c001827170:~$ gedit Documents/Docs/PersonnelDetectionGen0-master/admin/RequiredLibraries.sh &
+[2] 23733
+[1]   Done                    gedit Documents/Docs/PersonnelDetectionGen0-master/admin/RequiredLibraries.sh
+vantacr@c001827170:~$ 
+

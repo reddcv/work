@@ -1,0 +1,227 @@
+vantacr@c001827170:~$ cd work/PersonnelDetectionGen0/
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./run-unit-tests.sh receiver
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./run-unit-tests.sh Receive
+[==========] Running 7 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from BCamImageReceiverTest_init
+[ RUN      ] BCamImageReceiverTest_init.ConfigurationMangagerLoaded
+[       OK ] BCamImageReceiverTest_init.ConfigurationMangagerLoaded (1 ms)
+[ RUN      ] BCamImageReceiverTest_init.ConfigurationManagerNotLoaded
+[       OK ] BCamImageReceiverTest_init.ConfigurationManagerNotLoaded (0 ms)
+[----------] 2 tests from BCamImageReceiverTest_init (1 ms total)
+
+[----------] 5 tests from BCamImageReceiver_processReceiveBuffer
+[ RUN      ] BCamImageReceiver_processReceiveBuffer.ReceiveStartFragment
+./run-unit-tests.sh: line 1: 12537 Segmentation fault      (core dumped) "$file"
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from ImageReceiverFactory_createImageReceiver
+[ RUN      ] ImageReceiverFactory_createImageReceiver.ValidInput
+[       OK ] ImageReceiverFactory_createImageReceiver.ValidInput (0 ms)
+[ RUN      ] ImageReceiverFactory_createImageReceiver.InValidInput
+[       OK ] ImageReceiverFactory_createImageReceiver.InValidInput (0 ms)
+[----------] 2 tests from ImageReceiverFactory_createImageReceiver (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./run-unit-tests.sh Processing[==========] Running 6 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from PartialImageProcessor_init
+[ RUN      ] PartialImageProcessor_init.ConfigurationManagerLoaded
+[       OK ] PartialImageProcessor_init.ConfigurationManagerLoaded (48 ms)
+[----------] 1 test from PartialImageProcessor_init (48 ms total)
+
+[----------] 2 tests from PartialImageProcessor_updateProcessingImage
+[ RUN      ] PartialImageProcessor_updateProcessingImage.validImage_hasNewImage
+[       OK ] PartialImageProcessor_updateProcessingImage.validImage_hasNewImage (1 ms)
+[ RUN      ] PartialImageProcessor_updateProcessingImage.nullptrImage_doesNotHaveNewImage
+[       OK ] PartialImageProcessor_updateProcessingImage.nullptrImage_doesNotHaveNewImage (0 ms)
+[----------] 2 tests from PartialImageProcessor_updateProcessingImage (1 ms total)
+
+[----------] 3 tests from PartialImageProcessor_processImage
+[ RUN      ] PartialImageProcessor_processImage.validImage_noExceptionThrown
+[       OK ] PartialImageProcessor_processImage.validImage_noExceptionThrown (27 ms)
+[ RUN      ] PartialImageProcessor_processImage.invalidSizeImage_throwsInvalidImageSizeException
+[       OK ] PartialImageProcessor_processImage.invalidSizeImage_throwsInvalidImageSizeException (0 ms)
+[ RUN      ] PartialImageProcessor_processImage.nullptrImage_throwsProcessingNullImageException
+[       OK ] PartialImageProcessor_processImage.nullptrImage_throwsProcessingNullImageException (1 ms)
+[----------] 3 tests from PartialImageProcessor_processImage (28 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 3 test cases ran. (77 ms total)
+[  PASSED  ] 6 tests.
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from ProcessorFactory_createProcessor
+[ RUN      ] ProcessorFactory_createProcessor.ValidInput
+[       OK ] ProcessorFactory_createProcessor.ValidInput (1 ms)
+[ RUN      ] ProcessorFactory_createProcessor.InValidInput
+[       OK ] ProcessorFactory_createProcessor.InValidInput (0 ms)
+[----------] 2 tests from ProcessorFactory_createProcessor (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 2 tests.
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./run-unit-tests.sh Output
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from FactoryCreationTest
+[ RUN      ] FactoryCreationTest.ValidInput
+[       OK ] FactoryCreationTest.ValidInput (0 ms)
+[ RUN      ] FactoryCreationTest.InValidInput
+[       OK ] FactoryCreationTest.InValidInput (0 ms)
+[----------] 2 tests from FactoryCreationTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 2 tests.
+
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./run-unit-tests.sh Filtering
+[==========] Running 4 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from DetectionsFilter_init
+[ RUN      ] DetectionsFilter_init.ConfigurationManagerLoaded_noFilteringErrorEvent
+[       OK ] DetectionsFilter_init.ConfigurationManagerLoaded_noFilteringErrorEvent (1 ms)
+[ RUN      ] DetectionsFilter_init.ConfigurationManagerNotLoaded_filteringErrorEvent
+[       OK ] DetectionsFilter_init.ConfigurationManagerNotLoaded_filteringErrorEvent (0 ms)
+[----------] 2 tests from DetectionsFilter_init (1 ms total)
+
+[----------] 2 tests from DetectionsFilter_updateDetectionsToFilter
+[ RUN      ] DetectionsFilter_updateDetectionsToFilter.emptyDetections_hasNoDetections
+[       OK ] DetectionsFilter_updateDetectionsToFilter.emptyDetections_hasNoDetections (0 ms)
+[ RUN      ] DetectionsFilter_updateDetectionsToFilter.filledDetections_hasDetections
+[       OK ] DetectionsFilter_updateDetectionsToFilter.filledDetections_hasDetections (0 ms)
+[----------] 2 tests from DetectionsFilter_updateDetectionsToFilter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 2 test cases ran. (1 ms total)
+[  PASSED  ] 4 tests.
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from FactoryCreationTest
+[ RUN      ] FactoryCreationTest.ValidInput
+[       OK ] FactoryCreationTest.ValidInput (0 ms)
+[ RUN      ] FactoryCreationTest.InValidInput
+[       OK ] FactoryCreationTest.InValidInput (0 ms)
+[----------] 2 tests from FactoryCreationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./run-unit-tests.sh ThreadPool
+Enqueing: 0
+Enqueing: 1
+Enqueing: 2
+Enqueing: 3
+Sitting in: 0
+Sitting in: 2
+Sitting in: 1
+Enqueing: 4
+Enqueing: 5
+Enqueing: 6
+Sitting in: Enqueing: 7
+3
+Sitting in: Sitting in: Sitting in: 1
+0
+2
+Sitting in: 3
+Sitting in: Sitting in: Sitting in: 02
+
+1
+Sitting in: 3
+Sitting in: Sitting in: 4
+6
+Sitting in: 5
+Sitting in: 7
+Sitting in: Sitting in: Sitting in: 45
+
+6
+Sitting in: 7
+Sitting in: 4
+Sitting in: 5
+Sitting in: Sitting in: 7
+6
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./run-unit-tests.sh Decoding
+[==========] Running 6 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from ImageDecoder_init
+[ RUN      ] ImageDecoder_init.hasVAHardwareSupport_doesNotReceiveDecodingErrorEvent
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+[       OK ] ImageDecoder_init.hasVAHardwareSupport_doesNotReceiveDecodingErrorEvent (3 ms)
+[----------] 1 test from ImageDecoder_init (3 ms total)
+
+[----------] 2 tests from ImageDecoder_updateDecodingImage
+[ RUN      ] ImageDecoder_updateDecodingImage.validImage_hasNewImage
+[       OK ] ImageDecoder_updateDecodingImage.validImage_hasNewImage (0 ms)
+[ RUN      ] ImageDecoder_updateDecodingImage.nullptrImage_doesNotHaveNewImage
+[       OK ] ImageDecoder_updateDecodingImage.nullptrImage_doesNotHaveNewImage (0 ms)
+[----------] 2 tests from ImageDecoder_updateDecodingImage (0 ms total)
+
+[----------] 3 tests from ImageDecoder_decodeImage
+[ RUN      ] ImageDecoder_decodeImage.nullptrImage_throwsNullImageException
+[       OK ] ImageDecoder_decodeImage.nullptrImage_throwsNullImageException (0 ms)
+[ RUN      ] ImageDecoder_decodeImage.validImage_noExceptionThrown
+[       OK ] ImageDecoder_decodeImage.validImage_noExceptionThrown (0 ms)
+[ RUN      ] ImageDecoder_decodeImage.callWithoutInitialize_DecodingErrorEventOccur
+[       OK ] ImageDecoder_decodeImage.callWithoutInitialize_DecodingErrorEventOccur (0 ms)
+[----------] 3 tests from ImageDecoder_decodeImage (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 3 test cases ran. (5 ms total)
+[  PASSED  ] 6 tests.
+[==========] Running 8 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from JpegDecoderTest_init
+[ RUN      ] JpegDecoderTest_init.hasVAHardwareSupport_doesNotReceiveDecodingErrorEvent
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+[       OK ] JpegDecoderTest_init.hasVAHardwareSupport_doesNotReceiveDecodingErrorEvent (2 ms)
+[----------] 1 test from JpegDecoderTest_init (2 ms total)
+
+[----------] 4 tests from JpegDecoderTest_decode
+[ RUN      ] JpegDecoderTest_decode.callWithoutInitialize_throwModuleInitializeException
+[       OK ] JpegDecoderTest_decode.callWithoutInitialize_throwModuleInitializeException (0 ms)
+[ RUN      ] JpegDecoderTest_decode.inValidJpegImage_DecodingErrorEventOccur
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+[       OK ] JpegDecoderTest_decode.inValidJpegImage_DecodingErrorEventOccur (1 ms)
+[ RUN      ] JpegDecoderTest_decode.inValidJpegImage_decodeReturnFalse
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+[       OK ] JpegDecoderTest_decode.inValidJpegImage_decodeReturnFalse (1 ms)
+[ RUN      ] JpegDecoderTest_decode.validJpegImage_decodeReturnTrue
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+./run-unit-tests.sh: line 1: 12658 Segmentation fault      (core dumped) "$file"
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./run-unit-tests.sh Tracking
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from Tracker_init
+[ RUN      ] Tracker_init.configurationManagerLoaded_noTrackingErrorEvent
+[       OK ] Tracker_init.configurationManagerLoaded_noTrackingErrorEvent (1 ms)
+[ RUN      ] Tracker_init.configurationManagerNotLoaded_TrackingErrorEvent
+[       OK ] Tracker_init.configurationManagerNotLoaded_TrackingErrorEvent (0 ms)
+[----------] 2 tests from Tracker_init (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 2 tests.
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ 
+
