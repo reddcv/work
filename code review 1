@@ -1,0 +1,21 @@
+NonMaximalSuppression::suppress
+Description:
+	This function is used to suppress and erase overlapped 'NOTSUPPRESSED' state detections depends upon detection score.
+Usage of funtion in program:
+	applying non maximal suppression on current detections before passing into tracker as below.
+	_nonMaximalSuppression.suppress(detections); in Tracker.cpp 
+
+
+AnalyzerFactory::createAnalyzer
+Description:
+	This function Creates a analyzer based on passed analyzer description
+Usage of funtion in program:
+	used to create TimingAnalyzer object and assign to base class 'Analyzer' object.
+
+
+AcfProcessor::init
+	This function is used to Initializes partialImageProcessor and fullImageProcessor
+AcfProcessor::start/stop
+	This function is used to start/stop partialImageProcessor and fullImageProcessor
+Usage of funtion in program:
+	AcfProcessor functionality uses to create, Initialize, start, stop partialImageProcessor and fullImageProcessor.

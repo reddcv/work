@@ -1,0 +1,301 @@
+HEAD detached at origin/dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   test/CMakeLists.txt
+	modified:   test/ModuleTests/CMakeLists.txt
+	modified:   test/ModuleTests/Processing/CMakeLists.txt
+	modified:   test/ModuleTests/Processing/PartialImageProcessorModuleTest.cpp
+	modified:   test/UnitTests/CMakeLists.txt
+	modified:   test/UnitTests/Filtering/CMakeLists.txt
+	modified:   test/UnitTests/Output/CMakeLists.txt
+	modified:   test/UnitTests/Processing/CMakeLists.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	resources/PersonnelDetectionGen0_Overview.pdf
+	test/UnitTests/Analyze/
+	test/UnitTests/Detect/
+	test/UnitTests/Filtering/NonMaximalSuppressionTest.cpp
+	test/UnitTests/Processing/AcfProcessorTest.cpp
+	test/UnitTests/Processing/ChipImageProcessorTest.cpp
+	test/UnitTests/Processing/FullImageProcessorTest.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git checkout -b pactp_730180_unit_test_analyze_Process_Filter
+M	test/CMakeLists.txt
+M	test/ModuleTests/CMakeLists.txt
+M	test/ModuleTests/Processing/CMakeLists.txt
+M	test/ModuleTests/Processing/PartialImageProcessorModuleTest.cpp
+M	test/UnitTests/CMakeLists.txt
+M	test/UnitTests/Filtering/CMakeLists.txt
+M	test/UnitTests/Output/CMakeLists.txt
+M	test/UnitTests/Processing/CMakeLists.txt
+Switched to a new branch 'pactp_730180_unit_test_analyze_Process_Filter'
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git status 
+On branch pactp_730180_unit_test_analyze_Process_Filter
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   test/CMakeLists.txt
+	modified:   test/ModuleTests/CMakeLists.txt
+	modified:   test/ModuleTests/Processing/CMakeLists.txt
+	modified:   test/ModuleTests/Processing/PartialImageProcessorModuleTest.cpp
+	modified:   test/UnitTests/CMakeLists.txt
+	modified:   test/UnitTests/Filtering/CMakeLists.txt
+	modified:   test/UnitTests/Output/CMakeLists.txt
+	modified:   test/UnitTests/Processing/CMakeLists.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	resources/PersonnelDetectionGen0_Overview.pdf
+	test/UnitTests/Analyze/
+	test/UnitTests/Detect/
+	test/UnitTests/Filtering/NonMaximalSuppressionTest.cpp
+	test/UnitTests/Processing/AcfProcessorTest.cpp
+	test/UnitTests/Processing/ChipImageProcessorTest.cpp
+	test/UnitTests/Processing/FullImageProcessorTest.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git k
+git: 'k' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	am
+	fsck
+	gc
+	mv
+	rm
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ gitk
+The program 'gitk' is currently not installed. You can install it by typing:
+sudo apt install gitk
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ sudp apt install gitk
+No command 'sudp' found, did you mean:
+ Command 'sfdp' from package 'graphviz' (main)
+ Command 'sudo' from package 'sudo' (main)
+ Command 'sudo' from package 'sudo-ldap' (universe)
+ Command 'sup' from package 'sup' (universe)
+sudp: command not found
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ sudo apt-get install gitk
+[sudo] password for vantacr: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  linux-signed-image-generic-hwe-16.04
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  git-doc
+The following NEW packages will be installed:
+  gitk
+0 upgraded, 1 newly installed, 0 to remove and 169 not upgraded.
+Need to get 132 kB of archives.
+After this operation, 1,377 kB of additional disk space will be used.
+Err:1 http://us.archive.ubuntu.com/ubuntu xenial-updates/main i386 gitk all 1:2.7.4-0ubuntu1.4
+  Could not connect to proxy.cat.com:1080 (137.230.1.12). - connect (111: Connection refused) [IP: 137.230.1.12 1080]
+Err:1 http://security.ubuntu.com/ubuntu xenial-security/main amd64 gitk all 1:2.7.4-0ubuntu1.4
+  Could not connect to proxy.cat.com:1080 (137.230.1.12). - connect (111: Connection refused) [IP: 137.230.1.12 1080]
+Err:1 http://security.ubuntu.com/ubuntu xenial-security/main i386 gitk all 1:2.7.4-0ubuntu1.4
+  Could not connect to proxy.cat.com:1080 (137.230.1.12). - connect (111: Connection refused) [IP: 137.230.1.12 1080]
+Err:1 http://security.ubuntu.com/ubuntu xenial-security/main i386 gitk all 1:2.7.4-0ubuntu1.4
+  Could not connect to proxy.cat.com:1080 (137.230.1.12). - connect (111: Connection refused) [IP: 137.230.1.12 1080]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/git/gitk_2.7.4-0ubuntu1.4_all.deb  Could not connect to proxy.cat.com:1080 (137.230.1.12). - connect (111: Connection refused) [IP: 137.230.1.12 1080]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ sudo apt-get install gitk
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  linux-signed-image-generic-hwe-16.04
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  git-doc
+The following NEW packages will be installed:
+  gitk
+0 upgraded, 1 newly installed, 0 to remove and 169 not upgraded.
+Need to get 132 kB of archives.
+After this operation, 1,377 kB of additional disk space will be used.
+Err:1 http://us.archive.ubuntu.com/ubuntu xenial-updates/main i386 gitk all 1:2.7.4-0ubuntu1.4
+  404  Not Found [IP: 172.18.10.245 8080]
+Err:1 http://security.ubuntu.com/ubuntu xenial-security/main amd64 gitk all 1:2.7.4-0ubuntu1.4
+  404  Not Found [IP: 172.18.10.245 8080]
+Err:1 http://security.ubuntu.com/ubuntu xenial-security/main i386 gitk all 1:2.7.4-0ubuntu1.4
+  404  Not Found [IP: 172.18.10.245 8080]
+Err:1 http://security.ubuntu.com/ubuntu xenial-security/main i386 gitk all 1:2.7.4-0ubuntu1.4
+  404  Not Found [IP: 172.18.10.245 8080]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/git/gitk_2.7.4-0ubuntu1.4_all.deb  404  Not Found [IP: 172.18.10.245 8080]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ sudo apt-get update
+Hit:1 http://us.archive.ubuntu.com/ubuntu xenial InRelease
+Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [107 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]       
+Get:4 http://us.archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]               
+Get:5 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [862 kB]        
+Get:6 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [570 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [772 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [351 kB]   
+Get:9 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 DEP-11 Metadata [320 kB]  
+Get:10 http://us.archive.ubuntu.com/ubuntu xenial-updates/main DEP-11 64x64 Icons [232 kB]
+Get:11 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages [491 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [694 kB]   
+Get:13 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [637 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [281 kB] 
+Get:15 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 DEP-11 Metadata [247 kB]
+Get:16 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [239 kB]    
+Get:17 http://us.archive.ubuntu.com/ubuntu xenial-updates/universe DEP-11 64x64 Icons [333 kB]
+Get:18 http://us.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 DEP-11 Metadata [5,964 B]
+Get:19 http://us.archive.ubuntu.com/ubuntu xenial-updates/multiverse DEP-11 64x64 Icons [14.2 kB]
+Get:20 http://security.ubuntu.com/ubuntu xenial-security/main amd64 DEP-11 Metadata [67.7 kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu xenial-backports/main amd64 DEP-11 Metadata [3,328 B]
+Get:22 http://us.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 DEP-11 Metadata [5,100 B]
+Get:23 http://security.ubuntu.com/ubuntu xenial-security/main DEP-11 64x64 Icons [68.0 kB]
+Get:24 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [392 kB]
+Get:25 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages [340 kB]
+Get:26 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [150 kB]
+Get:27 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 DEP-11 Metadata [108 kB]
+Get:28 http://security.ubuntu.com/ubuntu xenial-security/universe DEP-11 64x64 Icons [145 kB]
+Fetched 7,651 kB in 5s (1,381 kB/s)   
+AppStream cache update completed, but some metadata was ignored due to errors.
+Reading package lists... Done
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ sudo apt-get install gitk
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  linux-signed-image-generic-hwe-16.04
+Use 'sudo apt autoremove' to remove it.
+Suggested packages:
+  git-doc
+The following NEW packages will be installed:
+  gitk
+0 upgraded, 1 newly installed, 0 to remove and 182 not upgraded.
+Need to get 132 kB of archives.
+After this operation, 1,377 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 gitk all 1:2.7.4-0ubuntu1.5 [132 kB]
+Fetched 132 kB in 0s (178 kB/s)
+Selecting previously unselected package gitk.
+(Reading database ... 192142 files and directories currently installed.)
+Preparing to unpack .../gitk_1%3a2.7.4-0ubuntu1.5_all.deb ...
+Unpacking gitk (1:2.7.4-0ubuntu1.5) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up gitk (1:2.7.4-0ubuntu1.5) ...
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ gitk &
+[1] 788
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git status
+On branch pactp_730180_unit_test_analyze_Process_Filter
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   test/CMakeLists.txt
+	modified:   test/ModuleTests/CMakeLists.txt
+	modified:   test/ModuleTests/Processing/CMakeLists.txt
+	modified:   test/ModuleTests/Processing/PartialImageProcessorModuleTest.cpp
+	modified:   test/UnitTests/CMakeLists.txt
+	modified:   test/UnitTests/Filtering/CMakeLists.txt
+	modified:   test/UnitTests/Output/CMakeLists.txt
+	modified:   test/UnitTests/Processing/CMakeLists.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	resources/PersonnelDetectionGen0_Overview.pdf
+	test/UnitTests/Analyze/
+	test/UnitTests/Detect/
+	test/UnitTests/Filtering/NonMaximalSuppressionTest.cpp
+	test/UnitTests/Processing/AcfProcessorTest.cpp
+	test/UnitTests/Processing/ChipImageProcessorTest.cpp
+	test/UnitTests/Processing/FullImageProcessorTest.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1]+  Done                    gitk
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git add .
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git status
+On branch pactp_730180_unit_test_analyze_Process_Filter
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   resources/PersonnelDetectionGen0_Overview.pdf
+	modified:   test/CMakeLists.txt
+	modified:   test/ModuleTests/CMakeLists.txt
+	modified:   test/ModuleTests/Processing/CMakeLists.txt
+	modified:   test/ModuleTests/Processing/PartialImageProcessorModuleTest.cpp
+	new file:   test/UnitTests/Analyze/AnalyzerFactoryTest.cpp
+	new file:   test/UnitTests/Analyze/CMakeLists.txt
+	modified:   test/UnitTests/CMakeLists.txt
+	new file:   test/UnitTests/Detect/CMakeLists.txt
+	new file:   test/UnitTests/Detect/ChannelsPyramidLevelTest.cpp
+	new file:   test/UnitTests/Detect/ChannelsPyramidTest.cpp
+	modified:   test/UnitTests/Filtering/CMakeLists.txt
+	new file:   test/UnitTests/Filtering/NonMaximalSuppressionTest.cpp
+	modified:   test/UnitTests/Output/CMakeLists.txt
+	new file:   test/UnitTests/Processing/AcfProcessorTest.cpp
+	modified:   test/UnitTests/Processing/CMakeLists.txt
+	new file:   test/UnitTests/Processing/ChipImageProcessorTest.cpp
+	new file:   test/UnitTests/Processing/FullImageProcessorTest.cpp
+
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git commit -m "Added initial unit test for Analyze, Process, Filter"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'vantacr@c001827170.(none)')
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git config --global user.email "Vantari_Charan_R@cat.com
+> 
+> ^C
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git config --global user.email "Vantari_Charan_R@cat.com"
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git config --global user.name  "Charan Vantari"
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git commit -m "Added initial unit test for Analyze, Process, Filter"
+[pactp_730180_unit_test_analyze_Process_Filter 10e8dd9] Added initial unit test for Analyze, Process, Filter
+ 18 files changed, 835 insertions(+), 18 deletions(-)
+ create mode 100644 resources/PersonnelDetectionGen0_Overview.pdf
+ create mode 100644 test/UnitTests/Analyze/AnalyzerFactoryTest.cpp
+ create mode 100644 test/UnitTests/Analyze/CMakeLists.txt
+ create mode 100644 test/UnitTests/Detect/CMakeLists.txt
+ create mode 100644 test/UnitTests/Detect/ChannelsPyramidLevelTest.cpp
+ create mode 100644 test/UnitTests/Detect/ChannelsPyramidTest.cpp
+ create mode 100644 test/UnitTests/Filtering/NonMaximalSuppressionTest.cpp
+ create mode 100644 test/UnitTests/Processing/AcfProcessorTest.cpp
+ create mode 100644 test/UnitTests/Processing/ChipImageProcessorTest.cpp
+ create mode 100644 test/UnitTests/Processing/FullImageProcessorTest.cpp
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ git push origin pactp_730180_unit_test_analyze_Process_Filter 
+Enter passphrase for key '/home/vantacr/.ssh/id_rsa': 
+Counting objects: 30, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (30/30), done.
+Writing objects: 100% (30/30), 132.03 KiB | 0 bytes/s, done.
+Total 30 (delta 12), reused 0 (delta 0)
+remote: 
+remote: ========================================================================
+remote: 
+remote:    The enterprise-wide moratorium begins on Monday, December 17, 2018
+remote:    running through Thursday, January 17, 2019. The moratorium will be
+remote:    imposed on all IT changes (production changes and any change in a
+remote:      non-production environment that could put production at risk).
+remote:   Changes may resume on Friday, January 18, 2019. More information is
+remote:                               available @
+remote:    https://www.yammer.com/cat.com/#/threads/show?threadId=1168931783
+remote: 
+remote: ========================================================================
+remote: 
+remote: To create a merge request for pactp_730180_unit_test_analyze_Process_Filter, visit:
+remote:   https://arlgitgisp03.ecorp.cat.com/pacdetect/PersonnelDetectionGen0/merge_requests/new?merge_request%5Bsource_branch%5D=pactp_730180_unit_test_analyze_Process_Filter
+remote: 
+To git@arlgitgisp03.ecorp.cat.com:pacdetect/PersonnelDetectionGen0.git
+ * [new branch]      pactp_730180_unit_test_analyze_Process_Filter -> pactp_730180_unit_test_analyze_Process_Filter
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ^C
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ 
+
