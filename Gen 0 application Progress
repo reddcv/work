@@ -1,9 +1,0 @@
-Investigate Gaps in Testing on Gen0
-
-*The main feature of the Gen0 Application is Personnel Detection.
-
-*Build System for Gen0 Application is build, it is tested using Camera emulator and mockdisplay.
-
-* some unit tests have been written and tested there are some tests are to written and tested.
-
-* Module tests are to be written and tested.
