@@ -1,0 +1,784 @@
+vantacr@c001827170:~$ cd build
+bash: cd: build: No such file or directory
+vantacr@c001827170:~$ cd work/
+vantacr@c001827170:~/work$ cd PersonnelDetectionGen0/
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd build
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ make
+[  1%] Built target Configuration
+[  5%] Built target Event
+[  6%] Built target ThreadPool
+[  8%] Built target DataChannel
+[  9%] Built target Status
+[ 10%] Built target DataType
+[ 11%] Built target Global
+[ 12%] Built target Recorder
+[ 15%] Built target Receive
+[ 18%] Built target Decoding
+[ 20%] Built target ChannelArray
+[ 21%] Built target ImageConversion
+[ 21%] Built target Classify
+[ 24%] Built target Detect
+[ 64%] Built target Codegen
+[ 71%] Built target Processing
+[ 75%] Built target Filtering
+Scanning dependencies of target Tracking
+[ 75%] Building CXX object lib/Tracking/CMakeFiles/Tracking.dir/Tracker.cpp.o
+[ 76%] Building CXX object lib/Tracking/CMakeFiles/Tracking.dir/Event/TrackingErrorEvent.cpp.o
+[ 76%] Building CXX object lib/Tracking/CMakeFiles/Tracking.dir/Event/NewTrackedDetectionsEvent.cpp.o
+[ 77%] Linking CXX static library libTracking.a
+[ 77%] Built target Tracking
+Scanning dependencies of target Output
+[ 77%] Building CXX object lib/Output/CMakeFiles/Output.dir/Output.cpp.o
+[ 78%] Building CXX object lib/Output/CMakeFiles/Output.dir/OutputFactory.cpp.o
+[ 78%] Building CXX object lib/Output/CMakeFiles/Output.dir/D6DisplayOutputAdapter.cpp.o
+[ 78%] Building CXX object lib/Output/CMakeFiles/Output.dir/Event/OutputAdapterErrorEvent.cpp.o
+[ 79%] Linking CXX static library libOutput.a
+[ 79%] Built target Output
+Scanning dependencies of target Logging
+[ 80%] Building CXX object lib/Logging/CMakeFiles/Logging.dir/Logger.cpp.o
+[ 80%] Linking CXX static library libLogging.a
+[ 80%] Built target Logging
+[ 81%] Built target Analyze
+Scanning dependencies of target PersonnelDetectionGen0
+[ 82%] Building CXX object src/CMakeFiles/PersonnelDetectionGen0.dir/main.cpp.o
+[ 82%] Linking CXX executable PersonnelDetectionGen0
+[ 82%] Built target PersonnelDetectionGen0
+[ 83%] Built target Watchdog
+[ 83%] Built target InputForker
+[ 85%] Built target MockDisplayApplication
+[ 88%] Built target CameraSimulator
+[ 88%] Building CXX object test/Processing/CMakeFiles/FullImageProcessorTest.dir/JpegImageReader.cpp.o
+/home/vantacr/work/PersonnelDetectionGen0/test/Processing/JpegImageReader.cpp:4:30: fatal error: opencv2/opencv.hpp: No such file or directory
+compilation terminated.
+test/Processing/CMakeFiles/FullImageProcessorTest.dir/build.make:86: recipe for target 'test/Processing/CMakeFiles/FullImageProcessorTest.dir/JpegImageReader.cpp.o' failed
+make[2]: *** [test/Processing/CMakeFiles/FullImageProcessorTest.dir/JpegImageReader.cpp.o] Error 1
+CMakeFiles/Makefile2:1751: recipe for target 'test/Processing/CMakeFiles/FullImageProcessorTest.dir/all' failed
+make[1]: *** [test/Processing/CMakeFiles/FullImageProcessorTest.dir/all] Error 2
+Makefile:127: recipe for target 'all' failed
+make: *** [all] Error 2
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ cd ..
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ nano test/CMakeLists.txt 
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd build
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ cd
+vantacr@c001827170:~$ touch main.cpp
+vantacr@c001827170:~$ nano main.cpp 
+vantacr@c001827170:~$ g++ main.cpp 
+vantacr@c001827170:~$ touch Makefile
+vantacr@c001827170:~$ nano Makefile 
+vantacr@c001827170:~$ make
+Makefile:1: *** missing separator.  Stop.
+vantacr@c001827170:~$ make
+Makefile:1: *** missing separator.  Stop.
+vantacr@c001827170:~$ rm Makefile 
+vantacr@c001827170:~$ mr main.cpp 
+The program 'mr' is currently not installed. You can install it by typing:
+sudo apt install myrepos
+vantacr@c001827170:~$ rm main.cpp 
+vantacr@c001827170:~$ cd work/PersonnelDetectionGen0/
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd build
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ cd ..
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd build
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ make
+-- Setting build type to 'Debug' as none was specified
+-- LibVA Include Directory: /usr/include
+-- LibVA Library: /usr/lib/x86_64-linux-gnu/libva.so
+-- DRM Include Directory: /usr/include/libdrm
+-- DRM Library: /usr/lib/x86_64-linux-gnu/libdrm.so
+-- PROTOBUF Include Directory: /usr/include
+-- PROTOBUF Library: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+-- Libraries
+--    Configuration
+--    Event
+--    ThreadPool
+--    DataChannel
+--    Status
+--    DataType
+--    Global
+--    Recorder
+--    Receive
+--    Decoding
+--    ChannelArray
+--    ImageConversion
+--    Classify
+--    Detect
+--    Codegen
+--    Processing
+--    Filtering
+--    Tracking
+--    Output
+--    Logging
+--    Analyze
+-- Source
+--    PersonnelDetectionGen0
+--    Watchdog
+--    InputForker
+-- Utilities
+--    MockDisplayApplication
+--    CameraSimulator
+-- Tests
+--    ThreadPoolTest
+--    DecodingTest
+--    JpegDecodertest
+--    DetectionFiltertest
+--    DecoderModuleTest
+--    TrackerModuleTest
+--    InputModuleTest (Missing dependency: Input)
+--    FilterModuleTest
+--    FullImageProcessorModuleTest
+--    PartialImageProcessorModuleTest
+--    ChipImageProcessorModuleTest
+--    ChipImageProcessingTest
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vantacr/work/PersonnelDetectionGen0/build
+[  1%] Built target Configuration
+[  5%] Built target Event
+[  6%] Built target ThreadPool
+[  7%] Built target DataChannel
+[  8%] Built target Status
+[ 10%] Built target DataType
+[ 11%] Built target Global
+[ 12%] Built target Recorder
+[ 16%] Built target Receive
+[ 19%] Built target Decoding
+[ 21%] Built target ChannelArray
+[ 22%] Built target ImageConversion
+[ 23%] Built target Classify
+[ 26%] Built target Detect
+[ 67%] Built target Codegen
+[ 73%] Built target Processing
+[ 76%] Built target Filtering
+[ 78%] Built target Tracking
+[ 81%] Built target Output
+[ 82%] Built target Logging
+[ 83%] Built target Analyze
+[ 84%] Built target PersonnelDetectionGen0
+[ 85%] Built target Watchdog
+[ 86%] Built target InputForker
+[ 87%] Built target MockDisplayApplication
+[ 90%] Built target CameraSimulator
+[ 91%] Built target ThreadPoolTest
+[ 91%] Built target DecodingTest
+[ 92%] Built target JpegDecodertest
+Scanning dependencies of target DetectionFiltertest
+[ 93%] Building CXX object test/Filter/CMakeFiles/DetectionFiltertest.dir/DetectionFiltertest.cpp.o
+/home/vantacr/work/PersonnelDetectionGen0/test/Filter/DetectionFiltertest.cpp: In lambda function:
+/home/vantacr/work/PersonnelDetectionGen0/test/Filter/DetectionFiltertest.cpp:81:19: warning: unused variable ‘e’ [-Wunused-variable]
+             auto& e = dynamic_cast<const NewDetectionsEvent&>(event);
+                   ^
+/home/vantacr/work/PersonnelDetectionGen0/test/Filter/DetectionFiltertest.cpp: In lambda function:
+/home/vantacr/work/PersonnelDetectionGen0/test/Filter/DetectionFiltertest.cpp:127:19: warning: unused variable ‘e’ [-Wunused-variable]
+             auto& e = dynamic_cast<const NewDetectionsEvent&>(event);
+                   ^
+[ 93%] Linking CXX executable DetectionFiltertest
+[ 93%] Built target DetectionFiltertest
+Scanning dependencies of target DecoderModuleTest
+[ 93%] Building CXX object test/ModuleTests/Decoder/CMakeFiles/DecoderModuleTest.dir/DecoderModuleTest.cpp.o
+[ 94%] Linking CXX executable DecoderModuleTest
+[ 94%] Built target DecoderModuleTest
+Scanning dependencies of target TrackerModuleTest
+[ 94%] Building CXX object test/ModuleTests/Tracker/CMakeFiles/TrackerModuleTest.dir/TrackerModuleTest.cpp.o
+/home/vantacr/work/PersonnelDetectionGen0/test/ModuleTests/Tracker/TrackerModuleTest.cpp: In lambda function:
+/home/vantacr/work/PersonnelDetectionGen0/test/ModuleTests/Tracker/TrackerModuleTest.cpp:35:19: warning: unused variable ‘e’ [-Wunused-variable]
+             auto& e = dynamic_cast<const NewFilteredDetectionsEvent&>(event);
+                   ^
+/home/vantacr/work/PersonnelDetectionGen0/test/ModuleTests/Tracker/TrackerModuleTest.cpp: In lambda function:
+/home/vantacr/work/PersonnelDetectionGen0/test/ModuleTests/Tracker/TrackerModuleTest.cpp:39:19: warning: unused variable ‘e’ [-Wunused-variable]
+             auto& e = dynamic_cast<const NewVerifiedChipsEvent&>(event);
+                   ^
+[ 95%] Linking CXX executable TrackerModuleTest
+[ 95%] Built target TrackerModuleTest
+Scanning dependencies of target FilterModuleTest
+[ 95%] Building CXX object test/ModuleTests/Filtering/CMakeFiles/FilterModuleTest.dir/FilterModuleTest.cpp.o
+[ 96%] Linking CXX executable FilterModuleTest
+[ 96%] Built target FilterModuleTest
+Scanning dependencies of target FullImageProcessorModuleTest
+[ 97%] Building CXX object test/ModuleTests/Processing/CMakeFiles/FullImageProcessorModuleTest.dir/FullImageProcessorModuleTest.cpp.o
+[ 97%] Linking CXX executable FullImageProcessorModuleTest
+[ 97%] Built target FullImageProcessorModuleTest
+Scanning dependencies of target PartialImageProcessorModuleTest
+[ 97%] Building CXX object test/ModuleTests/Processing/CMakeFiles/PartialImageProcessorModuleTest.dir/PartialImageProcessorModuleTest.cpp.o
+[ 98%] Linking CXX executable PartialImageProcessorModuleTest
+[ 98%] Built target PartialImageProcessorModuleTest
+Scanning dependencies of target ChipImageProcessorModuleTest
+[ 98%] Building CXX object test/ModuleTests/Processing/CMakeFiles/ChipImageProcessorModuleTest.dir/ChipImageProcessorModuleTest.cpp.o
+[ 99%] Linking CXX executable ChipImageProcessorModuleTest
+[ 99%] Built target ChipImageProcessorModuleTest
+[100%] Built target ChipImageProcessingTest
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ cmake ..
+-- Setting build type to 'Debug' as none was specified
+-- LibVA Include Directory: /usr/include
+-- LibVA Library: /usr/lib/x86_64-linux-gnu/libva.so
+-- DRM Include Directory: /usr/include/libdrm
+-- DRM Library: /usr/lib/x86_64-linux-gnu/libdrm.so
+-- PROTOBUF Include Directory: /usr/include
+-- PROTOBUF Library: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+-- Libraries
+--    Configuration
+--    Event
+--    ThreadPool
+--    DataChannel
+--    Status
+--    DataType
+--    Global
+--    Recorder
+--    Receive
+--    Decoding
+--    ChannelArray
+--    ImageConversion
+--    Classify
+--    Detect
+--    Codegen
+--    Processing
+--    Filtering
+--    Tracking
+--    Output
+--    Logging
+--    Analyze
+-- Source
+--    PersonnelDetectionGen0
+--    Watchdog
+--    InputForker
+-- Utilities
+--    MockDisplayApplication
+--    CameraSimulator
+-- Tests
+--    ThreadPoolTest
+--    DecodingTest
+--    JpegDecodertest
+--    DetectionFiltertest
+--    DecoderModuleTest
+--    TrackerModuleTest
+--    InputModuleTest (Missing dependency: Input)
+--    FilterModuleTest
+--    FullImageProcessorModuleTest
+--    PartialImageProcessorModuleTest
+--    ChipImageProcessorModuleTest
+--    ChipImageProcessingTest
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vantacr/work/PersonnelDetectionGen0/build
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ cd ..
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ nano config/
+camsim.conf         imageRecorder.conf  mockdisp.conf       watchdogTimer.conf  
+detector.conf       inputforker.conf    system.conf         
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./start-utils.sh 
+./start-utils.sh: line 4: ./bin/CameraSimulator: No such file or directory
+InputForkerPID: 21924
+CameraSimulatorPID: 21925
+MockDisplayApplicationPID: 21926
+htop -p 21924 -p 21925 -p 21926
+./start-utils.sh: line 7: ./bin/MockDisplayApplication: No such file or directory
+./start-utils.sh: line 14: htop: command not found
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd bulid
+bash: cd: bulid: No such file or directory
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd build
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ make
+[  1%] Built target Configuration
+[  5%] Built target Event
+[  6%] Built target ThreadPool
+[  7%] Built target DataChannel
+[  8%] Built target Status
+[ 10%] Built target DataType
+[ 11%] Built target Global
+[ 12%] Built target Recorder
+[ 16%] Built target Receive
+[ 19%] Built target Decoding
+[ 21%] Built target ChannelArray
+[ 22%] Built target ImageConversion
+[ 23%] Built target Classify
+[ 26%] Built target Detect
+[ 67%] Built target Codegen
+[ 73%] Built target Processing
+[ 76%] Built target Filtering
+[ 78%] Built target Tracking
+[ 81%] Built target Output
+[ 82%] Built target Logging
+[ 83%] Built target Analyze
+[ 84%] Built target PersonnelDetectionGen0
+[ 85%] Built target Watchdog
+[ 86%] Built target InputForker
+[ 87%] Built target MockDisplayApplication
+[ 90%] Built target CameraSimulator
+[ 91%] Built target ThreadPoolTest
+[ 91%] Built target DecodingTest
+[ 92%] Built target JpegDecodertest
+[ 93%] Built target DetectionFiltertest
+[ 94%] Built target DecoderModuleTest
+[ 95%] Built target TrackerModuleTest
+[ 96%] Built target FilterModuleTest
+[ 97%] Built target FullImageProcessorModuleTest
+[ 98%] Built target PartialImageProcessorModuleTest
+[ 99%] Built target ChipImageProcessorModuleTest
+[100%] Built target ChipImageProcessingTest
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ make install
+[  1%] Built target Configuration
+[  5%] Built target Event
+[  6%] Built target ThreadPool
+[  7%] Built target DataChannel
+[  8%] Built target Status
+[ 10%] Built target DataType
+[ 11%] Built target Global
+[ 12%] Built target Recorder
+[ 16%] Built target Receive
+[ 19%] Built target Decoding
+[ 21%] Built target ChannelArray
+[ 22%] Built target ImageConversion
+[ 23%] Built target Classify
+[ 26%] Built target Detect
+[ 67%] Built target Codegen
+[ 73%] Built target Processing
+[ 76%] Built target Filtering
+[ 78%] Built target Tracking
+[ 81%] Built target Output
+[ 82%] Built target Logging
+[ 83%] Built target Analyze
+[ 84%] Built target PersonnelDetectionGen0
+[ 85%] Built target Watchdog
+[ 86%] Built target InputForker
+[ 87%] Built target MockDisplayApplication
+[ 90%] Built target CameraSimulator
+[ 91%] Built target ThreadPoolTest
+[ 91%] Built target DecodingTest
+[ 92%] Built target JpegDecodertest
+[ 93%] Built target DetectionFiltertest
+[ 94%] Built target DecoderModuleTest
+[ 95%] Built target TrackerModuleTest
+[ 96%] Built target FilterModuleTest
+[ 97%] Built target FullImageProcessorModuleTest
+[ 98%] Built target PartialImageProcessorModuleTest
+[ 99%] Built target ChipImageProcessorModuleTest
+[100%] Built target ChipImageProcessingTest
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /home/vantacr/work/PersonnelDetectionGen0/bin/PersonnelDetectionGen0
+-- Installing: /home/vantacr/work/PersonnelDetectionGen0/bin/Watchdog
+-- Installing: /home/vantacr/work/PersonnelDetectionGen0/bin/InputForker
+-- Installing: /home/vantacr/work/PersonnelDetectionGen0/bin/MockDisplayApplication
+-- Set runtime path of "/home/vantacr/work/PersonnelDetectionGen0/bin/MockDisplayApplication" to "/usr/local/lib"
+-- Installing: /home/vantacr/work/PersonnelDetectionGen0/bin/CameraSimulator
+-- Set runtime path of "/home/vantacr/work/PersonnelDetectionGen0/bin/CameraSimulator" to "/usr/local/lib"
+vantacr@c001827170:~/work/PersonnelDetectionGen0/build$ cd ..
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./bin/MockDisplayApplication 
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+^CShutting down on signal: Interrupt
+Exiting...
+Thread not joinable
+Thread not joinable
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./start-utils.sh 
+InputForkerPID: 22402
+CameraSimulatorPID: 22403
+MockDisplayApplicationPID: 22404
+htop -p 22402 -p 22403 -p 22404
+./start-utils.sh: line 14: htop: command not found
+Streaming images...
+Failed to open file
+
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ls
+admin             catmod.h        data                images.list      notes.txt   start-utils.sh
+attach.sh         clean-build.sh  deploy.sh           images_raw.list  package.sh  test
+bin               clean.sh        detector.yaml       init.sh          README.md   util
+build             CMakeLists.txt  etc                 install.sh       resources
+build-debug.sh    *compilation*   images_inside.list  lib              run.sh
+build-release.sh  config          images_jpeg.list    libprotobuf.so   src
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd config/
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ ls
+camsim.conf    imageRecorder.conf  mockdisp.conf  watchdogTimer.conf
+detector.conf  inputforker.conf    system.conf
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ 
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ cd ..
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd src/
+vantacr@c001827170:~/work/PersonnelDetectionGen0/src$ ls
+CMakeLists.txt  inputForker.cpp  main.cpp  watchdog.cpp
+vantacr@c001827170:~/work/PersonnelDetectionGen0/src$ less main.cpp 
+vantacr@c001827170:~/work/PersonnelDetectionGen0/src$ less CMakeLists.txt 
+vantacr@c001827170:~/work/PersonnelDetectionGen0/src$ less main.cpp 
+vantacr@c001827170:~/work/PersonnelDetectionGen0/src$ cd ..
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ grep -rn "int main("
+util/CameraSimulator/main.cpp:24:int main()
+util/MockDisplayApplication/main.cpp:22:int main()
+util/Acf/main.cpp:36:int main()
+src/main.cpp:32:int main()
+Binary file src/.main.cpp.swo matches
+src/inputForker.cpp:27:int main()
+src/watchdog.cpp:23:int main()
+test/Codegen/AcfDetectTest.cpp:21:int main()
+test/ModuleTests/Filtering/FilterModuleTest.cpp:56:int main(int argc, char **argv)
+test/ModuleTests/Output/OutputModuleTest.cpp:35:int main(int argc, char **argv)
+test/ModuleTests/Processing/FullImageProcessorModuleTest.cpp:118:int main(int argc, char **argv)
+test/ModuleTests/Processing/PartialImageProcessorModuleTest.cpp:116:int main(int argc, char **argv)
+test/ModuleTests/Processing/ChipImageProcessorModuleTest.cpp:132:int main(int argc, char **argv)
+test/ModuleTests/Tracker/TrackerModuleTest.cpp:51:int main(int argc, char **argv)
+test/ModuleTests/Decoder/DecoderModuleTest.cpp:73:int main(int argc, char **argv)
+test/ModuleTests/Module/ModuleTest.cpp:30:int main(int argc, char **argv)
+test/Filter/DetectionFiltertest.cpp:177:int main(int argc, char **argv)
+test/Output/D6OutputAdapterTest.cpp:150:int main(int argc, char **argv)
+test/Output/OutputAdapterTest.cpp:22:int main()
+test/Decoding/DecodingTest.cpp:32:int main()
+test/Decoding/JpegDecodertest.cpp:85:int main(int argc, char **argv)
+test/ThreadPool/ThreadPoolTest.cpp:7:int main()
+test/Recorder/basic.cpp:72:int main(int argc, char** argv)
+test/Recorder/main.cpp:25:int main(int argc, char** argv)
+test/Recorder/write.cpp:54:int main(int argc, char* argv[]) {
+test/Recorder/read.cpp:40:int main(int argc, char* argv[]) {
+test/Processing/FullImageProcessorTest.cpp:158:int main(int argc, char **argv)
+test/Processing/PartialImageProcessorTest.cpp:172:int main(int argc, char **argv)
+test/ChipImageProcessing/main.cpp:40:int main()
+test/Input/InputFactoryTest.cpp:28:int main(int argc, char **argv)
+test/Input/InputAdapterTest.cpp:20:int main()
+build/CMakeFiles/CMakeError.log:25:int main(int argc, char** argv)
+build/CMakeFiles/feature_tests.cxx:405:int main(int argc, char** argv) { (void)argv; return features[argc]; }
+build/CMakeFiles/3.5.1/CompilerIdC/CMakeCCompilerId.c:522:int main(int argc, char* argv[])
+build/CMakeFiles/3.5.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:513:int main(int argc, char* argv[])
+build/CMakeFiles/feature_tests.c:34:int main(int argc, char** argv) { (void)argv; return features[argc]; }
+build/opencv/apps/annotation/opencv_annotation.cpp:219:int main( int argc, const char** argv )
+build/opencv/apps/traincascade/traincascade.cpp:12:int main( int argc, char* argv[] )
+build/opencv/apps/version/opencv_version.cpp:37:int main(int argc, const char** argv)
+build/opencv/apps/createsamples/createsamples.cpp:57:int main( int argc, char* argv[] )
+build/opencv/apps/visualisation/opencv_visualisation.cpp:82:int main( int argc, const char** argv )
+build/opencv/apps/interactive-calibration/main.cpp:90:int main(int argc, char** argv)
+build/opencv/3rdparty/zlib/inflate.c:332:    int main(void)
+build/opencv/3rdparty/openvx/README.md:20:int main()
+build/opencv/3rdparty/libtiff/CMakeLists.txt:48:        int main(int argc, char *argv[]) {return 0;}"
+build/opencv/3rdparty/libtiff/CMakeLists.txt:204:int main(void) {
+build/opencv/doc/tutorials/introduction/load_save_image/load_save_image.markdown:26:int main( int argc, char** argv )
+build/opencv/doc/tutorials/introduction/linux_gcc_cmake/linux_gcc_cmake.markdown:25:int main(int argc, char** argv )
+build/opencv/doc/tutorials/introduction/linux_eclipse/linux_eclipse.markdown:52:    int main( int argc, char** argv )
+build/opencv/doc/tutorials/introduction/windows_visual_studio_image_watch/windows_visual_studio_image_watch.markdown:59:int main(int argc, char *argv[])
+build/opencv/samples/opencl/opencl-opencv-interop.cpp:975:int main(int argc, char** argv)
+build/opencv/samples/dnn/openpose.cpp:57:int main(int argc, char **argv)
+build/opencv/samples/dnn/object_detection.cpp:52:int main(int argc, char** argv)
+build/opencv/samples/dnn/text_detection.cpp:20:int main(int argc, char** argv)
+build/opencv/samples/dnn/segmentation.cpp:47:int main(int argc, char** argv)
+build/opencv/samples/dnn/colorization.cpp:44:int main(int argc, char **argv)
+build/opencv/samples/dnn/classification.cpp:39:int main(int argc, char** argv)
+build/opencv/samples/opengl/opengl_interop.cpp:477:int main(int argc, char** argv)
+build/opencv/samples/opengl/opengl.cpp:47:int main(int argc, char* argv[])
+build/opencv/samples/gpu/alpha_comp.cpp:11:int main()
+build/opencv/samples/gpu/morphology.cpp:182:int main(int argc, const char* argv[])
+build/opencv/samples/gpu/pyrlk_optical_flow.cpp:207:int main(int argc, const char* argv[])
+build/opencv/samples/gpu/surf_keypoint_matcher.cpp:23:int main(int argc, char* argv[])
+build/opencv/samples/gpu/surf_keypoint_matcher.cpp:90:int main()
+build/opencv/samples/gpu/multi.cpp:15:int main()
+build/opencv/samples/gpu/multi.cpp:36:int main()
+build/opencv/samples/gpu/stereo_match.cpp:86:int main(int argc, char** argv)
+build/opencv/samples/gpu/farneback_optical_flow.cpp:46:int main(int argc, char **argv)
+build/opencv/samples/gpu/optical_flow.cpp:140:int main(int argc, const char* argv[])
+build/opencv/samples/gpu/cascadeclassifier.cpp:122:int main(int argc, const char *argv[])
+build/opencv/samples/gpu/super_resolution.cpp:55:int main(int argc, const char* argv[])
+build/opencv/samples/gpu/opticalflow_nvidia_api.cpp:22:int main( int, const char** )
+build/opencv/samples/gpu/opticalflow_nvidia_api.cpp:374:int main(int argc, char **argv)
+build/opencv/samples/gpu/bgfg_segm.cpp:23:int main(int argc, const char** argv)
+build/opencv/samples/gpu/cascadeclassifier_nvidia_api.cpp:21:int main( int, const char** )
+build/opencv/samples/gpu/cascadeclassifier_nvidia_api.cpp:155:int main(int argc, const char** argv)
+build/opencv/samples/gpu/houghlines.cpp:21:int main(int argc, const char* argv[])
+build/opencv/samples/gpu/hog.cpp:130:int main(int argc, char** argv)
+build/opencv/samples/gpu/video_writer.cpp:15:int main(int argc, const char* argv[])
+build/opencv/samples/gpu/video_writer.cpp:106:int main()
+build/opencv/samples/gpu/generalized_hough.cpp:25:int main(int argc, const char* argv[])
+build/opencv/samples/gpu/stereo_multi.cpp:354:int main(int argc, char** argv)
+build/opencv/samples/gpu/video_reader.cpp:17:int main(int argc, const char* argv[])
+build/opencv/samples/gpu/video_reader.cpp:89:int main()
+build/opencv/samples/cpp/videocapture_camera.cpp:10:int main(int, char**)
+build/opencv/samples/cpp/facial_features.cpp:32:int main(int argc, char** argv)
+build/opencv/samples/cpp/stereo_calib.cpp:345:int main(int argc, char** argv)
+build/opencv/samples/cpp/segment_objects.cpp:61:int main(int argc, char** argv)
+build/opencv/samples/cpp/create_mask.cpp:96:int main(int argc, char **argv)
+build/opencv/samples/cpp/autofocus.cpp:283:int main(int argc, char ** argv)
+build/opencv/samples/cpp/lsd_lines.cpp:9:int main(int argc, char** argv)
+build/opencv/samples/cpp/tvl1_optical_flow.cpp:149:int main(int argc, const char* argv[])
+build/opencv/samples/cpp/filestorage.cpp:71:int main(int ac, char** av)
+build/opencv/samples/cpp/stitching.cpp:20:int main(int argc, char* argv[])
+build/opencv/samples/cpp/select3dobj.cpp:385:int main(int argc, char** argv)
+build/opencv/samples/cpp/contours2.cpp:36:int main( int argc, char** argv)
+build/opencv/samples/cpp/delaunay2.cpp:106:int main( int argc, char** argv )
+build/opencv/samples/cpp/polar_transforms.cpp:14:int main( int argc, char** argv )
+build/opencv/samples/cpp/morphology2.cpp:60:int main( int argc, char** argv )
+build/opencv/samples/cpp/dft.cpp:25:int main(int argc, const char ** argv)
+build/opencv/samples/cpp/videocapture_starter.cpp:72:int main(int ac, char** av) {
+build/opencv/samples/cpp/distrans.cpp:113:int main( int argc, const char** argv )
+build/opencv/samples/cpp/drawing.cpp:20:int main()
+build/opencv/samples/cpp/squares.cpp:139:int main(int argc, char** argv)
+build/opencv/samples/cpp/warpPerspective_demo.cpp:45:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/introduction/windows_visual_studio_opencv/introduction_windows_vs.cpp:9:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/introduction/documentation/documentation.cpp:7:int main( void )
+build/opencv/samples/cpp/tutorial_code/introduction/display_image/display_image.cpp:16:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/snippets/imgcodecs_imwrite.cpp:22:int main()
+build/opencv/samples/cpp/tutorial_code/snippets/imgproc_HoughLinesP.cpp:7:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/snippets/imgproc_drawContours.cpp:7:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/snippets/imgproc_calcHist.cpp:6:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/snippets/core_split.cpp:17:int main()
+build/opencv/samples/cpp/tutorial_code/snippets/core_mat_checkVector.cpp:7:int main()
+build/opencv/samples/cpp/tutorial_code/snippets/imgproc_HoughLinesCircles.cpp:8:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/snippets/imgproc_applyColorMap.cpp:10:int main(int argc, const char *argv[])
+build/opencv/samples/cpp/tutorial_code/snippets/core_various.cpp:9:int main()
+build/opencv/samples/cpp/tutorial_code/snippets/imgproc_HoughLinesPointSet.cpp:7:int main()
+build/opencv/samples/cpp/tutorial_code/snippets/core_merge.cpp:17:int main()
+build/opencv/samples/cpp/tutorial_code/snippets/core_reduce.cpp:19:int main()
+build/opencv/samples/cpp/tutorial_code/photo/seamless_cloning/cloning_gui.cpp:276:int main()
+build/opencv/samples/cpp/tutorial_code/photo/seamless_cloning/cloning_demo.cpp:34:int main()
+build/opencv/samples/cpp/tutorial_code/photo/decolorization/decolor.cpp:27:int main( int argc, char *argv[] )
+build/opencv/samples/cpp/tutorial_code/photo/non_photorealistic_rendering/npr_demo.cpp:25:int main(int argc, char* argv[])
+build/opencv/samples/cpp/tutorial_code/photo/hdr_imaging/hdr_imaging.cpp:14:int main(int argc, char**argv)
+build/opencv/samples/cpp/tutorial_code/TrackingMotion/cornerDetector_Demo.cpp:38:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/TrackingMotion/goodFeaturesToTrack_Demo.cpp:30:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/TrackingMotion/cornerSubPix_Demo.cpp:29:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/TrackingMotion/cornerHarris_Demo.cpp:28:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ml/non_linear_svms/non_linear_svms.cpp:20:int main()
+build/opencv/samples/cpp/tutorial_code/ml/introduction_to_pca/introduction_to_pca.cpp:95:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/ml/introduction_to_svm/introduction_to_svm.cpp:10:int main(int, char**)
+build/opencv/samples/cpp/tutorial_code/ImgTrans/CannyDetector_Demo.cpp:58:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgTrans/houghcircles.cpp:12:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/ImgTrans/imageSegmentation.cpp:14:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/ImgTrans/HoughCircle_Demo.cpp:54:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/ImgTrans/Geometric_Transforms_Demo.cpp:18:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgTrans/copyMakeBorder_demo.cpp:25:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgTrans/Remap_Demo.cpp:20:int main(int argc, const char** argv)
+build/opencv/samples/cpp/tutorial_code/ImgTrans/HoughLines_Demo.cpp:38:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgTrans/houghlines.cpp:13:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/ImgTrans/Laplace_Demo.cpp:16:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgTrans/Sobel_Demo.cpp:19:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/gpu/gpu-basics-similarity/gpu-basics-similarity.cpp:65:int main(int, char *argv[])
+build/opencv/samples/cpp/tutorial_code/gpu/gpu-thrust-interop/main.cu:41:int main(void)
+build/opencv/samples/cpp/tutorial_code/imgcodecs/GDAL_IO/gdal-image.cpp:156:int main( int argc, char* argv[] ){
+build/opencv/samples/cpp/tutorial_code/core/mat_the_basic_image_container/mat_the_basic_image_container.cpp:23:int main(int,char**)
+build/opencv/samples/cpp/tutorial_code/core/mat_mask_operations/mat_mask_operations.cpp:21:int main( int argc, char* argv[])
+build/opencv/samples/cpp/tutorial_code/core/mat_operations/mat_operations.cpp:13:int main(int,char**)
+build/opencv/samples/cpp/tutorial_code/core/interoperability_with_OpenCV_1/interoperability_with_OpenCV_1.cpp:31:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/core/file_input_output/file_input_output.cpp:65:int main(int ac, char** av)
+build/opencv/samples/cpp/tutorial_code/core/discrete_fourier_transform/discrete_fourier_transform.cpp:20:int main(int argc, char ** argv)
+build/opencv/samples/cpp/tutorial_code/core/how_to_scan_images/how_to_scan_images.cpp:29:int main( int argc, char* argv[])
+build/opencv/samples/cpp/tutorial_code/core/how_to_use_OpenCV_parallel_for_/how_to_use_OpenCV_parallel_for_.cpp:93:int main()
+build/opencv/samples/cpp/tutorial_code/core/AddingImages/AddingImages.cpp:21:int main( void )
+build/opencv/samples/cpp/tutorial_code/HighGUI/BasicLinearTransformsTrackbar.cpp:44:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/HighGUI/AddingImagesTrackbar.cpp:43:int main( void )
+build/opencv/samples/cpp/tutorial_code/ImgProc/Morphology_1.cpp:31:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgProc/Threshold_inRange.cpp:55:int main(int argc, char* argv[])
+build/opencv/samples/cpp/tutorial_code/ImgProc/motion_deblur_filter/motion_deblur_filter.cpp:27:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/ImgProc/basic_drawing/Drawing_1.cpp:24:int main( void ){
+build/opencv/samples/cpp/tutorial_code/ImgProc/basic_drawing/Drawing_2.cpp:40:int main( void )
+build/opencv/samples/cpp/tutorial_code/ImgProc/anisotropic_image_segmentation/anisotropic_image_segmentation.cpp:15:int main()
+build/opencv/samples/cpp/tutorial_code/ImgProc/Pyramids/Pyramids.cpp:20:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgProc/morph_lines_detection/Morphology_3.cpp:17:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/ImgProc/Smoothing/Smoothing.cpp:31:int main( int argc, char ** argv )
+build/opencv/samples/cpp/tutorial_code/ImgProc/Threshold.cpp:49:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgProc/Morphology_2.cpp:33:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgProc/HitMiss/HitMiss.cpp:7:int main(){
+build/opencv/samples/cpp/tutorial_code/ImgProc/BasicLinearTransforms.cpp:21:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ImgProc/out_of_focus_deblur_filter/out_of_focus_deblur_filter.cpp:25:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/ImgProc/changing_contrast_brightness_image/changing_contrast_brightness_image.cpp:65:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/features2D/feature_homography/SURF_FLANN_matching_homography_Demo.cpp:20:int main( int argc, char* argv[] )
+build/opencv/samples/cpp/tutorial_code/features2D/feature_homography/SURF_FLANN_matching_homography_Demo.cpp:102:int main()
+build/opencv/samples/cpp/tutorial_code/features2D/feature_flann_matcher/SURF_FLANN_matching_Demo.cpp:18:int main( int argc, char* argv[] )
+build/opencv/samples/cpp/tutorial_code/features2D/feature_flann_matcher/SURF_FLANN_matching_Demo.cpp:67:int main()
+build/opencv/samples/cpp/tutorial_code/features2D/AKAZE_match.cpp:12:int main(int argc, char* argv[])
+build/opencv/samples/cpp/tutorial_code/features2D/AKAZE_tracking/planar_tracking.cpp:127:int main(int argc, char **argv)
+build/opencv/samples/cpp/tutorial_code/features2D/feature_description/SURF_matching_Demo.cpp:18:int main( int argc, char* argv[] )
+build/opencv/samples/cpp/tutorial_code/features2D/feature_description/SURF_matching_Demo.cpp:55:int main()
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/panorama_stitching_rotating_camera.cpp:76:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/perspective_correction.cpp:80:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/perspective_correction.cpp:101:int main()
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/homography_from_camera_displacement.cpp:184:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/homography_from_camera_displacement.cpp:206:int main()
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/decompose_homography.cpp:169:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/decompose_homography.cpp:191:int main()
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/pose_from_homography.cpp:139:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/features2D/Homography/pose_from_homography.cpp:160:int main()
+build/opencv/samples/cpp/tutorial_code/features2D/feature_detection/SURF_detection_Demo.cpp:13:int main( int argc, char* argv[] )
+build/opencv/samples/cpp/tutorial_code/features2D/feature_detection/SURF_detection_Demo.cpp:41:int main()
+build/opencv/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/src/main_registration.cpp:85:int main()
+build/opencv/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/src/main_detection.cpp:74:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/calib3d/camera_calibration/camera_calibration.cpp:253:int main(int argc, char* argv[])
+build/opencv/samples/cpp/tutorial_code/xfeatures2D/LATCH_match.cpp:24:int main(int argc, char* argv[])
+build/opencv/samples/cpp/tutorial_code/xfeatures2D/LATCH_match.cpp:109:int main()
+build/opencv/samples/cpp/tutorial_code/Histograms_Matching/calcBackProject_Demo2.cpp:29:int main( int, char** argv )
+build/opencv/samples/cpp/tutorial_code/Histograms_Matching/MatchTemplate_Demo.cpp:32:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/Histograms_Matching/calcHist_Demo.cpp:18:int main(int argc, char** argv)
+build/opencv/samples/cpp/tutorial_code/Histograms_Matching/calcBackProject_Demo1.cpp:26:int main( int argc, char* argv[] )
+build/opencv/samples/cpp/tutorial_code/Histograms_Matching/EqualizeHist_Demo.cpp:18:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/Histograms_Matching/compareHist_Demo.cpp:24:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/videoio/video-write/video-write.cpp:22:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/videoio/video-input-psnr-ssim/video-input-psnr-ssim.cpp:30:int main(int argc, char *argv[])
+build/opencv/samples/cpp/tutorial_code/ShapeDescriptors/findContours_demo.cpp:25:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ShapeDescriptors/generalContours_demo1.cpp:25:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ShapeDescriptors/moments_demo.cpp:26:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ShapeDescriptors/pointPolygonTest_demo.cpp:17:int main( void )
+build/opencv/samples/cpp/tutorial_code/ShapeDescriptors/generalContours_demo2.cpp:25:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/ShapeDescriptors/hull_demo.cpp:25:int main( int argc, char** argv )
+build/opencv/samples/cpp/tutorial_code/video/bg_sub.cpp:51:int main(int argc, char* argv[])
+build/opencv/samples/cpp/tutorial_code/objectDetection/objectDetection.cpp:18:int main( int argc, const char** argv )
+build/opencv/samples/cpp/tutorial_code/viz/creating_widgets.cpp:9:int main()
+build/opencv/samples/cpp/tutorial_code/viz/creating_widgets.cpp:104:int main()
+build/opencv/samples/cpp/tutorial_code/viz/transformations.cpp:55:int main(int argn, char **argv)
+build/opencv/samples/cpp/tutorial_code/viz/launching_viz.cpp:31:int main()
+build/opencv/samples/cpp/tutorial_code/viz/histo3D.cpp:183:int main(int argc, char **argv)
+build/opencv/samples/cpp/tutorial_code/viz/widget_pose.cpp:32:int main()
+build/opencv/samples/cpp/kmeans.cpp:18:int main( int /*argc*/, char** /*argv*/ )
+build/opencv/samples/cpp/calibration.cpp:297:int main( int argc, char** argv )
+build/opencv/samples/cpp/edge.cpp:54:int main( int argc, const char** argv )
+build/opencv/samples/cpp/tree_engine.cpp:35:int main(int argc, char** argv)
+build/opencv/samples/cpp/example_cmake/example.cpp:12:int main()
+build/opencv/samples/cpp/train_HOG.cpp:202:int main( int argc, char** argv )
+build/opencv/samples/cpp/ffilldemo.cpp:74:int main( int argc, char** argv )
+build/opencv/samples/cpp/cout_mat.cpp:28:int main(int argc, char** argv)
+build/opencv/samples/cpp/opencv_version.cpp:11:int main(int argc, const char* argv[])
+build/opencv/samples/cpp/application_trace.cpp:24:int main(int argc, char** argv)
+build/opencv/samples/cpp/stereo_match.cpp:44:int main(int argc, char** argv)
+build/opencv/samples/cpp/neural_network.cpp:7:int main()
+build/opencv/samples/cpp/connected_components.cpp:36:int main( int argc, const char** argv )
+build/opencv/samples/cpp/dbt_face_detection.cpp:40:int main(int , char** )
+build/opencv/samples/cpp/dbt_face_detection.cpp:105:int main()
+build/opencv/samples/cpp/train_svmsgd.cpp:203:int main()
+build/opencv/samples/cpp/videostab.cpp:285:int main(int argc, const char **argv)
+build/opencv/samples/cpp/intelperc_capture.cpp:265:int main(int argc, char* argv[])
+build/opencv/samples/cpp/shape_example.cpp:55:int main(int argc, char** argv)
+build/opencv/samples/cpp/falsecolor.cpp:82:int main(int argc, char** argv)
+build/opencv/samples/cpp/camshiftdemo.cpp:75:int main( int argc, const char** argv )
+build/opencv/samples/cpp/openni_capture.cpp:110:int main( int argc, char* argv[] )
+build/opencv/samples/cpp/stitching_detailed.cpp:347:int main(int argc, char* argv[])
+build/opencv/samples/cpp/image_sequence.cpp:19:int main(int argc, char** argv)
+build/opencv/samples/cpp/cloning_gui.cpp:277:int main()
+build/opencv/samples/cpp/detect_mser.cpp:401:int main(int argc, char *argv[])
+build/opencv/samples/cpp/minarea.cpp:17:int main( int /*argc*/, char** /*argv*/ )
+build/opencv/samples/cpp/cloning_demo.cpp:35:int main()
+build/opencv/samples/cpp/em.cpp:8:int main( int /*argc*/, char** /*argv*/ )
+build/opencv/samples/cpp/lkdemo.cpp:38:int main( int argc, char** argv )
+build/opencv/samples/cpp/npr_demo.cpp:29:int main(int argc, char* argv[])
+build/opencv/samples/cpp/peopledetect.cpp:54:int main(int argc, char** argv)
+build/opencv/samples/cpp/smiledetect.cpp:31:int main( int argc, const char** argv )
+build/opencv/samples/cpp/videocapture_basic.cpp:17:int main(int, char**)
+build/opencv/samples/cpp/convexhull.cpp:15:int main( int argc, char** argv )
+build/opencv/samples/cpp/detect_blob.cpp:71:int main(int argc, char *argv[])
+build/opencv/samples/cpp/mask_tmpl.cpp:8:int main( int argc, const char** argv )
+build/opencv/samples/cpp/watershed.cpp:49:int main( int argc, char** argv )
+build/opencv/samples/cpp/gstreamer_pipeline.cpp:234:int main(int argc, char *argv[])
+build/opencv/samples/cpp/inpaint.cpp:48:int main( int argc, char** argv )
+build/opencv/samples/cpp/starter_imagelist.cpp:63:int main(int ac, char** av)
+build/opencv/samples/cpp/logistic_regression.cpp:84:int main()
+build/opencv/samples/cpp/phase_corr.cpp:8:int main(int, char* [])
+build/opencv/samples/cpp/laplace.cpp:26:int main( int argc, char** argv )
+build/opencv/samples/cpp/facedetect.cpp:33:int main( int argc, const char** argv )
+build/opencv/samples/cpp/travelsalesman.cpp:70:int main(void)
+build/opencv/samples/cpp/letter_recog.cpp:516:int main( int argc, char *argv[] )
+build/opencv/samples/cpp/bgfg_segm.cpp:15:int main(int argc, const char** argv)
+build/opencv/samples/cpp/3calibration.cpp:176:int main( int argc, char** argv )
+build/opencv/samples/cpp/kalman.cpp:30:int main(int, char**)
+build/opencv/samples/cpp/points_classifier.cpp:295:int main()
+build/opencv/samples/cpp/grabcut.cpp:277:int main( int argc, char** argv )
+build/opencv/samples/cpp/videowriter_basic.cpp:17:int main(int, char**)
+build/opencv/samples/cpp/imagelist_creator.cpp:24:int main(int ac, char** av)
+build/opencv/samples/cpp/image.cpp:28:int main( int argc, char** argv )
+build/opencv/samples/cpp/fback.cpp:33:int main(int argc, char** argv)
+build/opencv/samples/cpp/matchmethod_orb_akaze_brisk.cpp:21:int main(int argc, char *argv[])
+build/opencv/samples/cpp/demhist.cpp:70:int main( int argc, const char** argv )
+build/opencv/samples/cpp/live_detect_qrcode.cpp:15:int main(int argc, char *argv[])
+build/opencv/samples/cpp/pca.cpp:122:int main(int argc, char** argv)
+build/opencv/samples/cpp/fitellipse.cpp:189:int main( int argc, char** argv )
+build/opencv/samples/directx/d3d11_interop.cpp:485:int main(int argc, char** argv)
+build/opencv/samples/directx/d3d9_interop.cpp:310:int main(int argc, char** argv)
+build/opencv/samples/directx/d3d10_interop.cpp:297:int main(int argc, char** argv)
+build/opencv/samples/directx/d3d9ex_interop.cpp:311:int main(int argc, char** argv)
+build/opencv/samples/tapi/pyrlk_optical_flow.cpp:75:int main(int argc, const char* argv[])
+build/opencv/samples/tapi/squares.cpp:136:int main(int argc, char** argv)
+build/opencv/samples/tapi/clahe.cpp:30:int main(int argc, char** argv)
+build/opencv/samples/tapi/ufacedetect.cpp:34:int main( int argc, const char** argv )
+build/opencv/samples/tapi/dense_optical_flow.cpp:48:int main(int argc, const char* argv[])
+build/opencv/samples/tapi/opencl_custom_kernel.cpp:41:int main(int argc, char** argv)
+build/opencv/samples/tapi/bgfg_segm.cpp:17:int main(int argc, const char** argv)
+build/opencv/samples/tapi/hog.cpp:58:int main(int argc, char** argv)
+build/opencv/samples/tapi/camshift.cpp:68:int main(int argc, const char ** argv)
+build/opencv/samples/va_intel/va_intel_interop.cpp:233:int main(int argc, char** argv)
+build/opencv/samples/android/hello-android/main.cpp:9:int main(int argc, char* argv[])
+build/opencv/samples/openvx/wrappers_video.cpp:203:int main(int argc, char *argv[])
+build/opencv/samples/openvx/wrappers.cpp:167:int main(int argc, char *argv[])
+build/opencv/samples/openvx/no_wrappers.cpp:338:int main(int argc, char *argv[])
+Binary file build/opencv/build/apps/version/CMakeFiles/opencv_version.dir/opencv_version.cpp.o matches
+build/opencv/build/3rdparty/ade/ade-0.1.1c/tutorial/05_backend.cpp:824:int main(int argc, char *argv[])
+build/opencv/build/3rdparty/ade/ade-0.1.1c/tutorial/04_passes.cpp:32:int main(int argc, char *argv[])
+build/opencv/build/3rdparty/ade/ade-0.1.1c/tutorial/03_meta.cpp:36:int main(int argc, char *argv[])
+build/opencv/build/3rdparty/ade/ade-0.1.1c/tutorial/01_hello.cpp:10:int main(int argc, char *argv[])
+build/opencv/build/3rdparty/ade/ade-0.1.1c/tutorial/02_add_link_remove.cpp:10:int main(int argc, char *argv[])
+build/opencv/build/3rdparty/ade/ade-0.1.1c/tutorial/06_hierarchy.cpp:94:int main(int argc, char *argv[])
+build/opencv/build/CMakeFiles/CMakeError.log:202:int main(argc, argv) int argc; char *argv[];
+build/opencv/build/CMakeFiles/CMakeError.log:204:int main(int argc, char *argv[])
+build/opencv/build/CMakeFiles/feature_tests.cxx:405:int main(int argc, char** argv) { (void)argv; return features[argc]; }
+build/opencv/build/CMakeFiles/3.5.1/CompilerIdC/CMakeCCompilerId.c:522:int main(int argc, char* argv[])
+build/opencv/build/CMakeFiles/3.5.1/CompilerIdCXX/CMakeCXXCompilerId.cpp:513:int main(int argc, char* argv[])
+build/opencv/build/CMakeFiles/CMakeOutput.log:584:int main(int argc, char** argv)
+build/opencv/build/CMakeFiles/CMakeOutput.log:626:int main(int argc, char** argv)
+build/opencv/build/CMakeFiles/CMakeOutput.log:783:int main(int argc, char** argv)
+build/opencv/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c:31:int main(argc, argv) int argc; char *argv[];
+build/opencv/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c:33:int main(int argc, char *argv[])
+build/opencv/build/CMakeFiles/feature_tests.c:34:int main(int argc, char** argv) { (void)argv; return features[argc]; }
+Binary file build/opencv/build/bin/opencv_test_imgcodecs matches
+Binary file build/opencv/build/bin/opencv_test_imgproc matches
+Binary file build/opencv/build/bin/opencv_test_features2d matches
+Binary file build/opencv/build/bin/opencv_perf_imgproc matches
+Binary file build/opencv/build/bin/opencv_test_videoio matches
+Binary file build/opencv/build/bin/opencv_test_core matches
+Binary file build/opencv/build/bin/opencv_test_stitching matches
+Binary file build/opencv/build/bin/opencv_test_superres matches
+Binary file build/opencv/build/bin/opencv_version matches
+Binary file build/opencv/build/bin/opencv_perf_videoio matches
+Binary file build/opencv/build/bin/opencv_perf_video matches
+Binary file build/opencv/build/bin/opencv_perf_imgcodecs matches
+Binary file build/opencv/build/bin/opencv_test_gapi matches
+Binary file build/opencv/build/bin/opencv_test_flann matches
+Binary file build/opencv/build/bin/opencv_test_objdetect matches
+Binary file build/opencv/build/bin/opencv_perf_core matches
+Binary file build/opencv/build/bin/opencv_test_photo matches
+Binary file build/opencv/build/bin/opencv_perf_objdetect matches
+Binary file build/opencv/build/bin/opencv_perf_gapi matches
+Binary file build/opencv/build/bin/opencv_perf_superres matches
+Binary file build/opencv/build/bin/opencv_test_video matches
+Binary file build/opencv/build/bin/opencv_perf_calib3d matches
+Binary file build/opencv/build/bin/opencv_perf_features2d matches
+Binary file build/opencv/build/bin/opencv_test_shape matches
+Binary file build/opencv/build/bin/opencv_test_ml matches
+Binary file build/opencv/build/bin/opencv_test_dnn matches
+Binary file build/opencv/build/bin/opencv_perf_photo matches
+Binary file build/opencv/build/bin/opencv_perf_dnn matches
+Binary file build/opencv/build/bin/opencv_test_calib3d matches
+Binary file build/opencv/build/bin/opencv_perf_stitching matches
+Binary file build/opencv/build/bin/opencv_test_videostab matches
+Binary file build/opencv/build/bin/opencv_test_highgui matches
+^C
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ 
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ./bin/PersonnelDetectionGen0 
+Initializign detector...
+Interface set up
+libva info: VA-API version 0.39.0
+libva info: va_getDriverName() returns 0
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/i965_drv_video.so
+libva info: Found init function __vaDriverInit_0_39
+libva info: va_openDriver() returns 0
+^CStopping...
+Thread not joinable
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd config/
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ cd ..
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ less src/main.cpp 
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ cd config/
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ ls
+camsim.conf    imageRecorder.conf  mockdisp.conf  watchdogTimer.conf
+detector.conf  inputforker.conf    system.conf
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ less system.conf 
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ less mockdisp.conf 
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ less system.conf 
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ less inputforker.conf 
+vantacr@c001827170:~/work/PersonnelDetectionGen0/config$ cd ..
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ less util/MockDisplayApplication/MockDisplay.cpp
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ less config/camsim.conf 
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ ls
+admin             catmod.h        data                images.list      notes.txt   start-utils.sh
+attach.sh         clean-build.sh  deploy.sh           images_raw.list  package.sh  test
+bin               clean.sh        detector.yaml       init.sh          README.md   util
+build             CMakeLists.txt  etc                 install.sh       resources
+build-debug.sh    *compilation*   images_inside.list  lib              run.sh
+build-release.sh  config          images_jpeg.list    libprotobuf.so   src
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ less images_inside.list 
+vantacr@c001827170:~/work/PersonnelDetectionGen0$ 
+
